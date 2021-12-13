@@ -10,9 +10,6 @@ package lt1143
 
 例如，"ace" 是 "abcde" 的子序列，但 "aec" 不是 "abcde" 的子序列。
 两个字符串的 公共子序列 是这两个字符串所共同拥有的子序列。
-
-
-
 */
 
 func longestCommonSubsequence(text1 string, text2 string) int {
