@@ -39,7 +39,7 @@ func main() {
 	}
 
 }
-
+ 
 func NewPrint(str string) {
 	var tmpStr []string
 	tmpMap := make(map[int]byte)
@@ -64,3 +64,5 @@ func NewPrint(str string) {
 		}
 	}
 }
+
+//公共
