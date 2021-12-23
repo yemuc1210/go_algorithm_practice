@@ -42,3 +42,34 @@ func max(a,b int) int {
 	}
 	return b
 }
+
+// package main
+
+// /**
+//  * 
+//  * @param arr int整型一维数组 the array
+//  * @return int整型
+// */
+// func maxLength( arr []int ) int {
+//     // write code here
+//     long := len(arr)
+//     if long  < 2 {
+//         return long
+//     }
+//     var start, max, tmp = 0, 0, 0
+//     tmpMap := make(map[int]int, 0)
+//     for loop:=0; loop < long; loop++ {
+//         tmpMap[arr[loop]] ++
+//         for tmpMap[arr[loop]] >1 {
+//             tmpMap[arr[start]] --
+//             start ++
+//         }
+//         if tmp < loop - start + 1 {
+//             tmp = loop - start +1
+//         }
+//     }
+//     if tmp > max {
+//         max = tmp
+//     }
+//     return max 
+// }
