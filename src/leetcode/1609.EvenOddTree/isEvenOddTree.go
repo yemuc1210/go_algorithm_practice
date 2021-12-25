@@ -1,7 +1,8 @@
 package lt1609
 
 import (
-	"fmt"
+	// "fmt"
+	"math"
 	. "structs"
 )
 
