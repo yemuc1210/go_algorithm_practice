@@ -16,4 +16,5 @@ import . "structs"
 */
 func maxDepth( root *TreeNode ) int {
     // write code here
+    return 0
 }
