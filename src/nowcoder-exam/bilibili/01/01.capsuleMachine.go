@@ -1,6 +1,6 @@
 package bilibili
 
-import "fmt"
+// import "fmt"
 
 //第一题 扭蛋机
 /*
@@ -46,8 +46,8 @@ func capsuleMachine(n int) string {
 	return res
 }
 
-func main(){
-    var n int
-    fmt.Scanln(&n)
-    fmt.Println(capsuleMachine(n))
-}
+// func main(){
+//     var n int
+//     fmt.Scanln(&n)
+//     fmt.Println(capsuleMachine(n))
+// }
