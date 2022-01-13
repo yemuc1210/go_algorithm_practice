@@ -51,3 +51,22 @@ func dominantIndex(nums []int) int {
 	}
 	return -1
 }
+
+//一次遍历解决
+func dominantIndex2(nums []int) int {
+	max,idx,less := 0,0,1
+	for i:=0;i<len(nums);i++{
+		if nums[i]>max {
+			less = max  //记录上一个max
+			max = nums[i]
+			idx = i
+		}else if nums[i] > less {
+			// nums[i] <=max && nums[i] >less  更新第二大
+			less = nums[i]
+		}
+	}
+	if max>=less*2 { 
+		return idx
+	}
+	return -1
+}
