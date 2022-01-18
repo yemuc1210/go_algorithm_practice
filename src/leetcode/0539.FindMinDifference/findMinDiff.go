@@ -1,9 +1,9 @@
-package lt538
+package lt539
 // 专项办35
 func findMinDifference(timePoints []string) int {
-	const Max = 1440   //最大值
+	const Max = 1440   //最大值  24*60=1440
 	minutesArr := [Max]int{}
-	for _,v := range timePoints {
+	for _,v := range timePoints {  //HH:MM格式
 		// 计算时间
         t := int(v[0] - '0') * 10 * 60 +
         int(v[1] - '0') * 60 +
@@ -23,7 +23,7 @@ func findMinDifference(timePoints []string) int {
         }
     }
 
-    // 计算每个时间段的间隔
+    // 计算每个时间段的间隔  时间是递增的
     min := 0
     for i := 1; i < len(time); i++ {
         if min == 0 || min > (time[i] - time[i-1]) {
