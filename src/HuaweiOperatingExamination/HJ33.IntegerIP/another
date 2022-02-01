@@ -1,0 +1,39 @@
+package main
+import (
+    "bufio"
+    "fmt"
+    "os"
+    "strings"
+    "strconv"
+)
+func main () {
+    scanner := bufio.NewScanner(os.Stdin)
+    for scanner.Scan(){
+        str := scanner.Text()
+        if strings.Contains(str, ".") {
+            fmt.Println(ipv4ToLong(str))
+        }else{
+            fmt.Println(longToIp(str))
+        }  
+    }
+}
+
+func ipv4ToLong(str string) string {
+    strArr := strings.Split(str,".")
+    res := 0
+    for i:=0;i<4;i++ {
+        tmp,_ := strconv.Atoi(strArr[i])
+        res = res*256 + tmp
+    }
+    return strconv.Itoa(res)
+}
+
+func longToIp (str string) string {
+    ipv4,_ := strconv.Atoi(str)
+    res := ""
+    for i:=0;i<4;i++ {
+        res = strconv.Itoa(ipv4%256) + "." + res
+        ipv4 /= 256
+    }
+     return strings.TrimRight(res, ".")
+}
