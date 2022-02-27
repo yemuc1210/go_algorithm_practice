@@ -107,6 +107,34 @@ func minimumTime1(time []int, totalTrips int) int64 {
 	return maxTime
 }
 
+func minimumTime2(time []int, totalTrips int) int64 {
+	// 二分查找，已知总时间T f(T)表示截至T时完成趟数 单调递增
+	low := 0 
+	high := min(time) * totalTrips  //  min(time) 完成一趟需要的最少时间
+	for low <= high {
+		mid := low + (high-low)>>2
+		total := 0
+		for _,t := range time {
+			total += mid/t
+		}
+		fmt.Println(total)
+		if total >= totalTrips {
+			high = mid-1
+		}else{
+			low = mid+1
+		}
+	}
+	return int64(low)
+}
+func min(time []int) int {
+	m := time[0]
+	for i:=1;i<len(time);i++{
+		if time[i] < m {
+			m = time[i]
+		}
+	}
+	return m
+}
 func main() {
 	// time := []int{1}
 	// time := []int{98,26,57,84,47,4,34,54,75,25,27,72,31,44,14,32,11,95,82,28,94,83,98,45,34,12,62,37,96,29,61,46,43,96,81,8,97,96,40,81}
@@ -119,6 +147,6 @@ func main() {
 	// totalTrips := 9
 	time := []int{5,10,10}
 	totalTrips := 9
-	res := minimumTime1(time,totalTrips)
+	res := minimumTime2(time,totalTrips)
 	fmt.Println(res)
 }
