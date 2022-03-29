@@ -1,5 +1,7 @@
 package lt2045
 
+import "math"
+
 func secondMinimum(n int, edges [][]int, time, change int) (ans int) {
     graph := make([][]int, n+1)
     for _, e := range edges {
