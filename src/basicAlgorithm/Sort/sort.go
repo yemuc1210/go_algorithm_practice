@@ -63,6 +63,8 @@ func searchIdx(nums []int, target int) int {
 	return right // 在right之后插入
 }
 
+
+
 // 3. 快速排序
 func QuickSort(nums []int) {
 	quickSortHelper(nums, 0, len(nums)-1)
