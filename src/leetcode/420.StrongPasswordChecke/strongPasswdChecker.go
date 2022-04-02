@@ -1,5 +1,7 @@
 package main
 
+import "unicode"
+
 /**
 强密码：
 6-20个字符
