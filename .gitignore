@@ -5,6 +5,7 @@ bin-release/
 [Bb]in/
 pkg/
 pkg/**
+./pkg/**
 # Other files and folders
 .settings/
 
