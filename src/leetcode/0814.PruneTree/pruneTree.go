@@ -1,5 +1,5 @@
 package lt814
-import "structs"
+import "go_practice/structs"
 type TreeNode = structs.TreeNode
 /*
 剑指 Offer II 047. 二叉树剪枝

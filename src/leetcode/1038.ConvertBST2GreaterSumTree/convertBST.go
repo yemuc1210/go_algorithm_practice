@@ -1,6 +1,6 @@
 package lt1038
 
-import "structs"
+import "go_practice/structs"
 type TreeNode = structs.TreeNode
 
 /*

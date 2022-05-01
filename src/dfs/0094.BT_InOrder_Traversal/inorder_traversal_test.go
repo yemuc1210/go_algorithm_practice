@@ -2,7 +2,7 @@ package leetcode
 
 import (
 	"fmt"
-	"structs"
+	"go_practice/structs"
 	"testing"
 )
 type question94 struct {

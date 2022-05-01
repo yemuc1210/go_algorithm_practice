@@ -8,7 +8,7 @@ package leetcode
  *     Right *TreeNode
  * }
  */
-import "structs"
+import "go_practice/structs"
 type TreeNode = structs.TreeNode
 
 func isSameTree(p *TreeNode, q *TreeNode) bool {

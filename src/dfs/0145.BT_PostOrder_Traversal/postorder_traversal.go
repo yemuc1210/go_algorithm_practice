@@ -5,7 +5,7 @@
 
 package leetcode
 
-import "structs"
+import "go_practice/structs"
 
 type TreeNode = structs.TreeNode
 
