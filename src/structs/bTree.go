@@ -174,8 +174,9 @@ func (bt *BTree) Delete(val int) *BTreeNode{
 	ok,i,node := bt.Search(val)
 	if ok {
 		t := node.DeleteNode(val,i)
+		return t
 	}
-	return t
+	return nil
 }
 
 func (t *BTreeNode) DeleteNode(val,i int) *BTreeNode {
