@@ -1,5 +1,5 @@
 package lt919
-import "structs"
+import "go_practice/structs"
 type TreeNode = structs.TreeNode
 //双端队列  完全二叉树插入     剑指offerII 43
 type CBTInserter struct {
