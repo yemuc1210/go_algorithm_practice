@@ -25,6 +25,6 @@ class Solution {
         for (int t = 1; t <= k + 1; t++) {
             ans = Math.min(ans, dp[t][dst]);
         }
-        return ans;
+        return ans==INF?-1:ans;
     }
 }
