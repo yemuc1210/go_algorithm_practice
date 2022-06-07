@@ -42,7 +42,7 @@ func minEatingSpeed(piles []int, h int) int {
 	for left <= right {
 		mid := (left+right) /2
 		hours := eatingTime(mid)
-		if hours > h {
+		if hours > h {// 二分查找最合适的速度
 			left = mid+1
 		}else{
 			result = mid // <=h 肯定是符合的，但是不一定是最合理的数据，可以先存下来
