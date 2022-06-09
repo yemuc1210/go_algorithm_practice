@@ -1,6 +1,5 @@
 package main
 
-// 1037. 有效的回旋镖
 // 如果所有点构成回旋镖则返回true
 // 回旋镖：一组三个点，各不相同，且不在一条直线上
 // 提示：points.length==3     points[i].length==2
